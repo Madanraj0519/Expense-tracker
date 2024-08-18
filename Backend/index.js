@@ -24,7 +24,8 @@ mongoose.connect(process.env.MONGO_BD).then(() => {
 
 
 const corsOptions = {
-    origin: 'http://localhost:5173', 
+    origin: 'https://expense-tracker-frontend-two-bay.vercel.app', 
+    // origin: 'http://localhost:5173', 
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'], 
     credentials: true 
