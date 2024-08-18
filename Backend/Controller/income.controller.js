@@ -46,7 +46,7 @@ const addIncome = async (req, res, next) => {
 
 const deleteIncome = async (req, res, next) => {
     const { id } = req.params;
-    console.log(id);
+    // console.log(id);
 
     try {
 
@@ -60,10 +60,7 @@ const deleteIncome = async (req, res, next) => {
             req.user.id,
             {
                 $inc : {
-                    totalIncome : amount,
-                },
-                $inc : {
-                    total : amount,
+                    totalIncome : -amount,
                 }
             },
             {

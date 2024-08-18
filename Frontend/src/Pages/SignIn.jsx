@@ -35,7 +35,7 @@ const SignIn = () => {
 
     setError("");
 
-    console.log(email, password);
+    // console.log(email, password);
 
     // sign in api calls
     try {

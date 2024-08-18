@@ -16,7 +16,7 @@ const SignUp = () => {
   const [isActive, setIsActive] = useState(false);
 
 
-  const {currentUser} = useSelector((state) => state.authUser);
+  // const {currentUser} = useSelector((state) => state.authUser);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -42,7 +42,7 @@ const SignUp = () => {
 
     setError("");
 
-    console.log( userName ,email, password);
+    // console.log( userName ,email, password);
 
     // Sign up api call
     try {
